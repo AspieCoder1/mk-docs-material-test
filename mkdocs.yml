@@ -12,6 +12,46 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  features:
+    - navigation.sections
+nav:
+  - What is Datapreparer?: 'index.md'
+  - Quick Start: 
+      - Install Datapreparer: 'quick-start/install.md'
+      - Setup Datapreparer: 
+          - Vscode Setup: 'quick-start/vscode-setup.md'
+          - Intellij Setup: 'index.md'
+          - Terminal: 'index.md'
+      - Starter Example: 'quick-start/starter-project.md'
+  - Guides:
+      - Data preparation process: 'index.md'
+      - Adding data: 'index.md'
+      - Setting priorities: 
+          - Using Criterias: 'index.md'
+          - Using Filters: 'index.md'
+      - Refining solutions: 
+          - Feedback: 'index.md'
+          - Steering: 'index.md'
+  - Advanced Usage:
+      - Command line tool: 'index.md'
+      - Scenarios: 'index.md'
+      - Wrangle properties: 'index.md'
+      - Database connection: 'index.md'
+      - JSON support: 'index.md'
+      - Web security: 'index.md'
+  - Pipeline:
+      - Brief Overview: 'index.md'
+      - Transducers:
+          - Match: 'index.md'
+          - Repair: 'index.md'
+          - Transform: 'index.md'
+          - Profile: 'index.md'
+          - Map: 'index.md'
+          - Select: 'index.md'
+  - Open Source Self Help: 
+      - Project Structure: 
+          - Spring Setup: 'spring-setup.md'
+      - Contributing: 'index.md'
 plugins:
   - search
 markdown_extensions:
@@ -19,3 +59,6 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - meta
+  - attr_list
+extra_css:
+  - extra.css
