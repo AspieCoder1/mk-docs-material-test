@@ -34,11 +34,11 @@ There is a dropdown to the left of it, cliock this dropdown and select **edit co
 There you should create a new Spring Boot runner.
 The configuration for which is given below,
 ![Run configuration](https://i.imgur.com/qm2V16t.png)
-> IMPORTANT: the JVM option must be set to 
+> **IMPORTANT: the JVM option must be set to 
 > `
 > -Djava.awt.headless=false -Dapple.awt.UIElement=true -Dtextdb.allow_full_path=true
 > `
-> for the application to run properly.
+> for the application to run properly.**
 ## Running the datapreparer app
 This step is very easy. We simply just select the created run configuration from the dropdown and press the green run button.
 
