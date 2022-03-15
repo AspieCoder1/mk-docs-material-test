@@ -20,7 +20,7 @@ nav:
       - Install Datapreparer: 'quick-start/install.md'
       - Setup Datapreparer: 
           - Vscode Setup: 'quick-start/vscode-setup.md'
-          - Intellij Setup: 'quick-start/intellij-setup.md'
+          - IntelliJ Setup: 'quick-start/intellij-setup.md'
           - Terminal: 'index.md'
       - Starter Example: 'quick-start/starter-project.md'
   - Guides:
