@@ -24,9 +24,22 @@ At this point you will be prompted to add choose a name and location of the modu
 The location should be the **app** directory in the datapreparer root and the name can be what ever you choose. The completed configration should look like this,
 ![Complete module configuration](https://i.imgur.com/CC6ujkZ.png)
 After this you should press finish. You have now set up a maven module for the application.
+> *IMPORTANT*: you will need to copy and paste the pom.xml into from the repo app folder,
+>  it is overwritten locally by the IntelliJ.
+> It is avaliable [here]().
 ## Creating run configurations
-
-## Creating a test configuration
-> This step is optional but worth doing, especially if you intend to contribute to the project.
-
+The final step is the run configuration.
+We go into the top right hand corner next to the run button.
+There is a dropdown to the left of it, cliock this dropdown and select **edit configurations...**.
+There you should create a new Spring Boot runner.
+The configuration for which is given below,
+![Run configuration](https://i.imgur.com/qm2V16t.png)
+> IMPORTANT: the JVM option must be set to 
+> `
+> -Djava.awt.headless=false -Dapple.awt.UIElement=true -Dtextdb.allow_full_path=true
+> `
+> for the application to run properly.
 ## Running the datapreparer app
+This step is very easy. We simply just select the created run configuration from the dropdown and press the green run button.
+
+Congratulations you now have datapreparer setup with IntelliJ IDEA.
