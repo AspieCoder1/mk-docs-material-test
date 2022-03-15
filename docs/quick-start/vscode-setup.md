@@ -1,4 +1,6 @@
 # Setup using Visual Studio Code
+> **_NOTE:_** These steps should work for Windows, WSL, Linux and MacOS
+
 In this section, we will be going through the steps to setup the datapreparer tool to run in visual studio code.
 
 ## Prerequisites
@@ -23,7 +25,7 @@ Once it is created, go back to the **Run and Debug** extension. Click on the dro
 ![Add configuration](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FP3MlUexSWXzBdI2MDVAl%2Fuploads%2FLZ97ylfSJJmzF8Epinmp%2Fimage.png?alt=media&token=01e7ee9c-f879-4484-83fe-0cab284c60d7){: .center}
 
 Add this configuration into your launch.js. Make sure that **vmArgs** is there.
-```
+```json
 {
     "type": "java",
     "name": "Launch Data Preparer",
@@ -39,5 +41,3 @@ Add this configuration into your launch.js. Make sure that **vmArgs** is there.
 Go back to the Run and Debug extension and select Launch Data Preparer, then click on the green start button. 
 
 ![Run the app](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FP3MlUexSWXzBdI2MDVAl%2Fuploads%2FxoC7HF6K5QDf8KA1MmXV%2Fimage.png?alt=media&token=fb81fef5-2a33-485c-8511-24425fe3d218){: .center}
-
-> **_NOTE:_** These steps should work for Windows, WSL, Linux and MacOS
