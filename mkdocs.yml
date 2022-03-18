@@ -25,7 +25,10 @@ nav:
       - Starter Example: 'quick-start/starter-project.md'
   - Guides:
       - Data preparation process: 'index.md'
-      - Adding data: 'index.md'
+      - Adding data:
+        - Importing CSV data: 'guides/adding-data/CSV.MD'
+        - Connecting to an external database: 'guides/adding-data/external-DB.MD'
+        - JSON support: 'guides/adding-data/JSON.MD'
       - Setting priorities: 
           - Using Criterias: 'index.md'
           - Using Filters: 'index.md'
