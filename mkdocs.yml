@@ -24,11 +24,12 @@ nav:
           - Terminal: 'index.md'
       - Starter Example: 'quick-start/starter-project.md'
   - Guides:
-      - Data preparation process: 'index.md'
+      - Data preparation process: 'guides/data-prep-process.md'
       - Adding data:
         - Importing CSV data: 'guides/adding-data/CSV.md'
-        - Connecting to an external database: 'guides/adding-data/external-DB.md'
+        - Connecting to local databases: 'guides/adding-data/local-DB.md'
         - JSON support: 'guides/adding-data/JSON.md'
+        - From the web: 'guides/adding-data/external-uri.md'
       - Setting priorities: 
           - Using Criterias: 'index.md'
           - Using Filters: 'index.md'
