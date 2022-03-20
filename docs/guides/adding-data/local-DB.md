@@ -14,8 +14,8 @@ Datapreparer supports:
 - SQL Server (version 2017 or newer)
 
 ## Supported Jdbc Connection Strings
-Note: Where available, the schema to import needs to be defined.
-Jdbc connection strings are in a single line and should be in the following form:
+> Note: The schema to import needs to be defined where available.
+> Jdbc connection strings are in a single line and should be in the following form:
 
 - DB2.jdbc:db2://<\host>:<\port>/<\database>:currentSchema=<\schema>;
 user=<\user>;
