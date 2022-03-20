@@ -34,8 +34,8 @@ nav:
           - Using Criterias: 'index.md'
           - Using Filters: 'index.md'
       - Refining solutions: 
-          - Feedback: 'index.md'
-          - Steering: 'index.md'
+          - Feedback: 'guides/refining-solutions/feedback.md'
+          - Steering: 'guides/refining-solutions/steering.md'
   - Advanced Usage:
       - Command line tool: 'index.md'
       - Scenarios: 'index.md'

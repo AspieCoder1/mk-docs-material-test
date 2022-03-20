@@ -1,0 +1,12 @@
+# Introduction
+Data Preparer systematically explores a space of integration and cleaning options but can certainly make decisions that are not the ones the user would prefer.As a result, Data Preparer allows the user to refine the way in which the wrangle of the data should happen, either by providing feedback on the results of the data preparation task, by changing parameters
+that control how Data Preparer behaves, or by annotating the constructs that can contribute to a solution.
+
+# How to use feedback
+By clicking on **end product** after wrangling the data, you will be able to submit feedback. 
+
+At the bottom of the page you can select etiher *cells* (individual attribute values) or *tupels* (complete rows), then by clicking on the entires in the table you will mark the cells/rows with the selected attribute (green - relevant, red - non relevant).
+
+![Registering feedback](https://i.imgur.com/P6G53kC.png){.center}
+
+When you are done click on `Submit feedback` and your choices will be registered. If you are not happy with a change just scroll to the feedback section and remove it.
