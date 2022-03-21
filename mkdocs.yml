@@ -26,22 +26,23 @@ nav:
   - Guides:
       - Data preparation process: 'guides/data-prep-process.md'
       - Adding data:
-        - Importing CSV data: 'guides/adding-data/CSV.md'
-        - Connecting to local databases: 'guides/adding-data/local-DB.md'
-        - JSON support: 'guides/adding-data/JSON.md'
+        - From CSV files: 'guides/adding-data/CSV.md'
+        - From local databases: 'guides/adding-data/local-DB.md'
+        - From JSON files: 'guides/adding-data/JSON.md'
         - From the web: 'guides/adding-data/external-uri.md'
-      - Setting priorities: 
-          - Using Criterias: 'index.md'
-          - Using Filters: 'index.md'
+      - Viewing data (Data Context): ''
+      - Setting priorities (User Context): 
+          - Motivation: 'guides/setting-priorities/intro.md'
+          - Using Criteria: 'guides/setting-priorities/criterias.md'
+          - Using Filters: 'guides/setting-priorities/filters.md'
       - Refining solutions: 
+          - Motivation: 'guides/refining-solutions/intro.md'
           - Feedback: 'guides/refining-solutions/feedback.md'
           - Steering: 'guides/refining-solutions/steering.md'
   - Advanced Usage:
       - Command line tool: 'index.md'
       - Scenarios: 'index.md'
       - Wrangle properties: 'index.md'
-      - Database connection: 'index.md'
-      - JSON support: 'index.md'
       - Web security: 'index.md'
   - Pipeline:
       - Brief Overview: 'index.md'
