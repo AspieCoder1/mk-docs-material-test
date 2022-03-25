@@ -8,7 +8,7 @@
 
 ## Inverting a filter
 Inverting a filter means that only tuples which do not satisfy the filter will be allowed to populate the end product. 
-> Note: This is essentially negating your filter.
+> Note: This essentially negates your filter.
 
 ## How to add a filter
 1. Head over to the **User Context** tab and click on **Add filter**.
