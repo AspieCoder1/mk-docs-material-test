@@ -13,7 +13,7 @@ Data Preparer supports importing JSON format data as well.
 5. You have now successfully imported data from a JSON file. From here, you can now explore and wrangle the data.
 
 #### Supported structures:
-1. With attribute names:
+##### With attribute names:
 
 ```json
 [ {"att1": "v1", "att2": "v2", ...},
@@ -27,7 +27,7 @@ or
 {"att1": "v3", "att2": "v4", ...}, ...]}
 ```
 
-2. Without attribute names:
+##### Without attribute names:
 
 ```json
 [["v1","v2", ...],["v3","v4", ...], ...]
