@@ -41,3 +41,5 @@ Add this configuration into your launch.js. Make sure that **vmArgs** is there.
 Go back to the Run and Debug extension and select Launch Data Preparer, then click on the green start button. 
 
 ![Run the app](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FP3MlUexSWXzBdI2MDVAl%2Fuploads%2FxoC7HF6K5QDf8KA1MmXV%2Fimage.png?alt=media&token=fb81fef5-2a33-485c-8511-24425fe3d218){: .center}
+
+Congratulations you now have datapreparer setup with Visual Studio Code.
