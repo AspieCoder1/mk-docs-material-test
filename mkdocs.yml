@@ -26,6 +26,7 @@ nav:
   - Guides:
       - Data preparation process: 'guides/data-prep-process.md'
       - Adding data:
+        - Overview: 'guides/adding-data/intro.md'
         - From CSV files: 'guides/adding-data/CSV.md'
         - From local databases: 'guides/adding-data/local-DB.md'
         - From JSON files: 'guides/adding-data/JSON.md'

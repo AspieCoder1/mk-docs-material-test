@@ -1,11 +1,11 @@
 # Example Starter Project
-In this section, we will use the datapreparer web interface to introduce a running example that will be used to illustrate the features of Data Preparer. The example is small enough to be easily understood, but also presents a number of data integration and cleaning challenges that need to be resolved during data preparation.
+In this section, we will use the datapreparer web interface to introduce a running example that will illustrate the features of Data Preparer. The sample is small enough to be easily understood and presents several data integration and cleaning challenges that need to be resolved during data preparation.
 
 ## Prerequisites
-For running the example project, you need to have the datapreparer set up and have the ManualBooks0.scenario file. This file should have come with the download or you can download it manually from here. *todo*
+To run the example project, you need to have the datapreparer setup and the ManualBooks0.scenario file. This file should have come with the download, or you can download it manually from here. *todo*
 
 ## Introduction
-The scenario involves an online bookshop that is considering introducing promotions on specific authors, and that is interested in comparing the prices of its competitors for these authors. With this in mind, it has scraped data on the publications by the authors from several competitor sites to act as sources for the data preparation process. 
+The scenario involves an online bookshop that is considering introducing promotions on specific authors and is interested in comparing the prices of its competitors for these authors. With this in mind, it has scraped data on the publications by the authors from several competitor sites to act as sources for the data preparation process. 
 
 #### Two of these (with some example data) are for 
 - Rainforest Books (Table 1) and 
@@ -13,10 +13,10 @@ The scenario involves an online bookshop that is considering introducing promoti
 
 ![Tables](https://i.imgur.com/4xY47r5.png)
 
-The tables contain certain features that need to be taken into account during data wrangling that are common in practice (e.g., inconsistent numbers of columns, inconsistent names for columns containing the same data, missing values).
+The tables contain certain features that need to be considered during data wrangling that is common in practice (e.g., varying numbers of columns, inconsistent names for columns having the same data, missing values).
 
 ## Launching the web interface
-To get started, let's launch the web interface (full details in the previous section). If you have launched it correctly, you should see this page.
+Let's launch the web interface (full details in the previous section) to get started. If you have launched it correctly, you should see this page.
 ![datapreparer homepage](https://i.imgur.com/yMc7TJd.png)
 
 ## Import the scenario
@@ -30,11 +30,11 @@ Once the scenario is imported, you will see that the scenario info section is no
 We can take a more detailed look at the data by navigating to the data source tab. This tab displays all the data sources for the scenario.
 ![view data](https://i.imgur.com/8G4BD6F.png)
 
-You can also view the data rows directly by clicking on any of the data sources. Here is the data rows for the **GoodReads** data source.
+You can also view the data rows directly by clicking on any data sources. For example, here are the data rows for the **GoodReads** data source.
 ![data rows](https://i.imgur.com/Nuo6rX0.png)
 
 ## Visualisation of the data
-For any data table in our scenario, we can obtain a visualisation of its attribute values by clicking the respective chart icon, thus facilitating the discovery of outliers, anomalies, patterns, trends in the data, etc. We can visualise tables in sources or in the data context, candidate mappings, and the end product. 
+For any data table in our scenario, we can visualise its attribute values by clicking the respective chart icon, thus facilitating the discovery of outliers, anomalies, patterns, trends in the data, etc. Furthermore, we can visualise tables in sources or data context, candidate mappings, and the end product. 
 
 #### How attributes are plotted
 - Attributes with numeric values are plotted as continuous lines, along with a statistics summary (maximum, minimum, mean, standard deviation, median, and sum).
@@ -45,21 +45,21 @@ Here is the visualisation of the attributes in the **GoodReads** table.
 ![Visualisation](https://i.imgur.com/gClrb0z.png)
 
 ## Setting the target
-The target section is where you would set your expected output format for the data, this is how the user makes explicit what is required of the wrangling process. The datapreparer will transform the input data sources to fit this format. 
+The target section is where you would set your expected output format for the data; this is how the user makes explicit what is required of the wrangling process. Then, the datapreparer will transform the input data sources to fit this format. 
 
 The target for data preparation is also a table definition, just add the fields you want, and the datapreparer will try to match the data sources to them.
 ![target schema](https://i.imgur.com/BXkzwa2.png)
 
 ## Wrangle the data
-Just with this information (i.e. the sources and the target), it is already possible to wrangle the data with a single click; the wrangle option is always available in the left side of the submenu. This will give rise to a result, containing up to a number of rows specified in the control panel.
-> Note: Configurations are set in the control panel section, but we will cover that in a further guide. 
+With this information (i.e. the sources and the target), it is already possible to wrangle the data with a single click; the wrangle option is always available on the left side of the submenu. This will give rise to a result containing several rows specified in the control panel.
+> Note: Configurations are set in the control panel section, but we will cover that in a different guide. 
 
 You can view the output rows here in the end product tab.
 ![end product](https://i.imgur.com/74RZ6sF.png)
-> Note: The end product can still contain blank cells, so some further data cleaning still needs to be done (or you can let datapreparer handle this by setting further configurations), but the datapreparer has managed to link fields from different tables into just one table.
+> Note: The end product can still contain blank cells, so further data cleaning must be done. You can let datapreparer handle this by setting further configurations, but the datapreparer has managed to link fields from different tables into just one table.
 
 ## Viewing the results at each stage of the workflow
-In the control panel tab, you can view the workflow of the wrangle process. The workflow contains multiple transducers which transform data from one form to another at multiple stages, we will be covering how these transducers work in detail in another section.
+In the control panel tab, you can view the workflow of the wrangling process. The workflow contains multiple transducers which transform data from one form to another at multiple stages. We will be covering how these transducers work in detail in another section.
 ![control panel](https://i.imgur.com/cIjPSfX.png)
 
 You can view the output from each transducer by clicking on any of them.
@@ -69,7 +69,7 @@ You can view the output from each transducer by clicking on any of them.
 Congratulations! You have finished going through the basics with datapreparer.
 
 #### Let's review what we just went through
-- What just happened? With very little evidence, Data Preparer has had a go at wrangling a collection of sources into a target – here only a few sources, but there could have been many more.
-- Why is this good? This is good because in other data preparation systems significant manual effort is required to carry out even preliminary wrangling over a collection of sources.
+- What just happened? With very little evidence, Data Preparer has had a go at wrangling a collection of sources into a target – here, only a few sources, but there could have been many more.
+- Why is this good? This is good because a significant manual effort is required to carry out even preliminary wrangling over a collection of sources in other data preparation systems.
 
-In Data Preparer, an initial result can be obtained much more quickly. This initial result can be improved upon, but data preparation has been essentially hands-off.
+In Data Preparer, an initial result can be obtained much more quickly. Of course, this initial result can be improved upon, but data preparation has been essentially hands-off.
