@@ -50,8 +50,8 @@ nav:
       - Transducers:
           - Match: 'index.md'
           - Repair: 'index.md'
-          - Transform: 'index.md'
-          - Profile: 'index.md'
+          - Transform: 'pipeline/transform.md'
+          - Profile: 'pipeline/profile.md'
           - Map: 'index.md'
           - Select: 'index.md'
   - Open Source Self Help: 
