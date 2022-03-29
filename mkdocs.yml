@@ -44,7 +44,7 @@ nav:
       - Command line tool: 'index.md'
       - Scenarios: 'index.md'
       - Wrangle properties: 'index.md'
-      - Web security: '/advances/web-security.md'
+      - Web security: 'advanced/web-security.md'
   - Pipeline:
       - Brief Overview: 'index.md'
       - Transducers:
@@ -52,8 +52,8 @@ nav:
           - Repair: 'index.md'
           - Transform: 'index.md'
           - Profile: 'index.md'
-          - Map: 'index.md'
-          - Select: 'index.md'
+          - Map: 'pipeline/map.md'
+          - Select: 'pipeline/select.md'
   - Open Source Self Help: 
       - Project Structure: 
           - Spring Setup: 'spring-setup.md'
