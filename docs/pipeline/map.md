@@ -29,7 +29,9 @@ On this page, we can see:
 
 - **provenance** - the data sources used in the mapping
 - a diagram that shows the mapping as an input/output diagram.
-    Clicking on each element inside the diagram gives you the ability to view user context, data sources, attributes and properties.
+    Clicking on each element inside the diagram gives you the ability to view user context, data sources, attributes and properties. 
 - a table view of the joined data
   
-> If you want to explore the original data, you can click on a data source. > This will take you to a page to view the data source.
+> If you want to explore the original data, you can click on a data source. 
+> This will take you to a page to view the data source.
+> Look at the [viewing guide]().
