@@ -35,4 +35,4 @@ On this page, we can see:
   
 > If you want to explore the original data, you can click on a data source. 
 > This will take you to a page to view the data source.
-> Look at the [viewing guide]().
+> Look at the [viewing guide](/guides/pipeline/viewing-data).
