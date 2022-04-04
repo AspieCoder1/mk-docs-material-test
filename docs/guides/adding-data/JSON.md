@@ -16,25 +16,39 @@ Data Preparer supports importing JSON format data as well.
 ##### With attribute names:
 
 ```json
-[ {"att1": "v1", "att2": "v2", ...},
-{"att1": "v3", "att2": "v4", ...}, ... ]
+[ 
+    {"title": "THE SUN ALSO RISES", "author": "ERNEST HEMINGWAY"},
+    {"title": "Don Quixote", "author": "Miguel de Cervantes"}, 
+]
 ```
 
 or
 
 ```json
-{"data": [{"att1": "v1", "att2": "v2", ...},
-{"att1": "v3", "att2": "v4", ...}, ...]}
+{
+    "data": [
+            {"title": "THE SUN ALSO RISES", "author": "ERNEST HEMINGWAY"},
+            {"title": "Don Quixote", "author": "Miguel de Cervantes"}, 
+        ]
+}
 ```
 
 ##### Without attribute names:
 
 ```json
-[["v1","v2", ...],["v3","v4", ...], ...]
+[
+    ["THE SUN ALSO RISES","ERNEST HEMINGWAY" ],
+    ["Don Quixote","Miguel de Cervantes" ]
+]
 ```
 
 or
 
 ```json
-{"data":[["v1", "v2", ...], ["v3", "v4", ...], ...]}
+{
+    "data":[
+        ["THE SUN ALSO RISES", "ERNEST HEMINGWAY"],
+        ["Don Quixote", "Miguel de Cervantes"],
+        ]
+}
 ```
