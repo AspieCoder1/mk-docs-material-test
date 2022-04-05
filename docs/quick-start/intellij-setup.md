@@ -12,7 +12,7 @@ Running the code in IntelliJ requires the following prequisites:
 - Maven 3
 - The codebase cloned into a IntelliJ project and imported as a maven project with a Java 11 SDK configured.
 
-## Setting up the maven module
+## Setting the maven project
 Go to **File > Project structure** or <kbd>&#8984;</kbd> + <kbd>;</kbd> after doing this you should should see the following menu.
 ![Project structure](https://i.imgur.com/3JjeqR5.png){.center}
 At this point you should set the project SDK to Java 11 as well as the language level. 
@@ -21,12 +21,23 @@ After completing this step you should get the following menu,
 ![New module](https://i.imgur.com/1Kr5Nkr.png){.center}
 You should click the **next** button.
 At this point you will be prompted to add choose a name and location of the module.
-The location should be the **app** directory in the datapreparer root and the name can be what ever you choose. The completed configration should look like this,
-![Complete module configuration](https://i.imgur.com/CC6ujkZ.png)
-After this you should press finish. You have now set up a maven module for the application.
-> *IMPORTANT*: you will need to copy and paste the pom.xml into from the repo app folder,
->  it is overwritten locally by the IntelliJ.
-> It is avaliable [here]().
+Keep the name it gives you. 
+The completed configration should look like this,
+![Complete module configuration](https://i.imgur.com/VJj89Oh.png){.center}
+From here you shoud get a maven project sidebar.
+Your IntelliJ should look something like this,
+![IntelliJ with maven config](https://i.imgur.com/IvhVgix.png){.center}
+
+## Adding the datapreparer maven configuration
+We now need to add the maven configuration for the *app* directory, which contains the application source code.
+If you look at the maven tab, you will see a small plus button.
+This screen shot shows the tab and the plus button,
+![Maven tab](https://i.imgur.com/iUFpkii.png){.center}
+Click on this add button.
+You will then be prompted to select the location of the pom.xml file for the configuration you would like to add.
+Navigate to the app directory and select the pom.xml file inside of it.
+
+
 ## Creating run configurations
 The final step is the run configuration.
 We go into the top right hand corner next to the run button.
