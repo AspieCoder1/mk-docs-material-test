@@ -69,7 +69,8 @@ You can view the output from each transducer by clicking on any of them.
 Congratulations! You have finished going through the basics with datapreparer.
 
 #### Let's review what we just went through
-- What just happened? With very little evidence, Data Preparer has had a go at wrangling a collection of sources into a target – here, only a few sources, but there could have been many more.
-- Why is this good? This is good because a significant manual effort is required to carry out even preliminary wrangling over a collection of sources in other data preparation systems.
+- **What just happened?** With very little evidence, Data Preparer has had a go at wrangling a collection of sources into a target – here only a few sources, but there could have been many more.
+- **Why is this good?** This is good because in other data preparation systems significant manual effort is required to carry out even preliminary wrangling over a collection of sources. In other data preparation systems, manual effort tends to be required for each data set and each wrangling step, so data context helps to provide cost-effective data preparation.
+- **What more is needed?** So far, no indication has been provided as to what result features are most important. With automated data preparation, alternative results can be produced rapidly, so an opportunity exists to tailor the wrangling process to the task in hand. (Look at the [setting priorities section](../guides/setting-priorities/intro.md))
 
 In Data Preparer, an initial result can be obtained much more quickly. Of course, this initial result can be improved upon, but data preparation has been essentially hands-off.
