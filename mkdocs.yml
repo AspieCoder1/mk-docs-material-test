@@ -31,7 +31,7 @@ nav:
         - From local databases: 'guides/adding-data/local-DB.md'
         - From JSON files: 'guides/adding-data/JSON.md'
         - From the web: 'guides/adding-data/external-uri.md'
-      - Viewing data (Data Context): ''
+      - Data Context: 'guides/viewing-data.md'
       - Setting priorities (User Context): 
           - Motivation: 'guides/setting-priorities/intro.md'
           - Using Criteria: 'guides/setting-priorities/criterias.md'
