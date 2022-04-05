@@ -17,9 +17,16 @@ These attributes have been matched because, although the attribute names are dif
 ![match-config](https://i.imgur.com/XvcE8JB.png)
 
 #### Format match parameters:
-- **match strategy**: 
-- **match threshold**: 
-- **match instances max**: 
+- **match strategy**: Here there are three options: schema, schema+instances and instances. 
+
+- Schema is where only the attribute names will be compared for similarity.
+- Schema+Instances is where both attribute and instances will be compared for similarity
+- Instances is where only attribute instances will be compared for similarity.
+
+- **match threshold**: This is a number between 0 and 1 that defines the threshold below which all matches will be discarded.
+
+- **match instances max**: This is the number of instances to compare when evaluating similarity between two attributes.
+>Note: Set to 0 for unlimited.
 
 
 
