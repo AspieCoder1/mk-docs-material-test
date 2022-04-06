@@ -30,7 +30,7 @@ Your IntelliJ should look something like this,
 
 ## Fixing Java version in maven
 You now need to set the java version in the pom.xml file.
-You can do this by adding the following lines
+You can do this by adding the following lines to pom.xml inside the app directory:
 
 ```xml
 <plugin>
