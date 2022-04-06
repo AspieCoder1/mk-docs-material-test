@@ -12,10 +12,10 @@ Inverting a filter means that only tuples which do not satisfy the filter will b
 
 ## How to add a filter
 1. Head over to the **User Context** tab and click on **Add filter**.
-![User context tab](blob:https://imgur.com/6987aa36-2a3b-4d8a-9f0c-5519b9134ac4)
+![User context tab](https://i.imgur.com/hUmwLkA.png)
 
 2. A modal to add a filter will appear. Select your filter and element.
-![Add Filter](blob:https://imgur.com/14e3d1a2-ab82-4465-a0f4-e1c7b18d9b29)
+![Add Filter](https://i.imgur.com/N8WrsZ5.png)
 
 ## Supported filters
 ### No parameters required

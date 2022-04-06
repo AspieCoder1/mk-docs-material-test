@@ -27,7 +27,7 @@ password=<\password>;
 - PostgreSQL.jdbc:postgresql://<\host>:<\port>/<\database>?currentSchema=<\schema>
 &user=<\user>&password=<\password>
 - Presto.jdbc:presto://<\host>:<\port>/<\catalog>/<\schema>?user=<\user>&password=<\password>
-- Snowflake.jdbc:snowflake://<\account>.snowflakecomputing.com/?db=<\database>
-&schema=<\schema>&user=<\user>&password=<\password>
+- Snowflake. jdbc\:snowflake\://<account>.snowflakecomputing.com/?db=<database>
+&schema=<schema>&user=<user>&password=<password>
 - SQL Server.jdbc:sqlserver://<\host>:<\port>;database=<\database>;
 user=<\user>;password=<\password>;
