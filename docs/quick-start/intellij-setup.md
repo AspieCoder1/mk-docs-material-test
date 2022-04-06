@@ -28,6 +28,22 @@ From here you shoud get a maven project sidebar.
 Your IntelliJ should look something like this,
 ![IntelliJ with maven config](https://i.imgur.com/IvhVgix.png){.center}
 
+## Fixing Java version in maven
+You now need to set the java version in the pom.xml file.
+You can do this by adding the following lines
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version>
+    <configuration>
+        <source>11</source>
+        <target>11</target>
+    </configuration>
+</plugin>
+```
+
 ## Adding the datapreparer maven configuration
 We now need to add the maven configuration for the *app* directory, which contains the application source code.
 If you look at the maven tab, you will see a small plus button.
