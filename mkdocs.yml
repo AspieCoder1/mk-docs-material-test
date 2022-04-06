@@ -32,7 +32,7 @@ nav:
         - From JSON files: 'guides/adding-data/JSON.md'
         - From the web: 'guides/adding-data/external-uri.md'
       - Data Context: 'guides/viewing-data.md'
-      - Setting priorities (User Context): 
+      - User Context: 
           - Motivation: 'guides/setting-priorities/intro.md'
           - Using Criteria: 'guides/setting-priorities/criterias.md'
           - Using Filters: 'guides/setting-priorities/filters.md'
@@ -44,7 +44,7 @@ nav:
       - Command line tool: 'index.md'
       - Scenarios: 'index.md'
       - Wrangle properties: 'index.md'
-      - Web security: '/advances/web-security.md'
+      - Web security: 'advanced/web-security.md'
   - Pipeline:
       - Brief Overview: 'index.md'
       - Transducers:
