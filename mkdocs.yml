@@ -50,10 +50,10 @@ nav:
       - Transducers:
           - Match: 'index.md'
           - Repair: 'index.md'
-          - Transform: 'pipeline/transform.md'
-          - Profile: 'pipeline/profile.md'
-          - Map: 'index.md'
-          - Select: 'index.md'
+          - Transform: 'index.md'
+          - Profile: 'index.md'
+          - Map: 'pipeline/map.md'
+          - Select: 'pipeline/select.md'
   - Open Source Self Help: 
       - Project Structure: 
           - Spring Setup: 'spring-setup.md'
