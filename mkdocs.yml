@@ -24,8 +24,9 @@ nav:
           - Terminal: 'index.md'
       - Starter Example: 'quick-start/starter-project.md'
   - Guides:
-      - Data preparation process: 'guides/data-prep-process.md'
-      - Adding data:
+      - Data Preparation Process: 'guides/data-prep-process.md'
+      - Intro to Scenarios: 'guides/scenario.md'
+      - Adding Data:
         - Overview: 'guides/adding-data/intro.md'
         - From CSV files: 'guides/adding-data/CSV.md'
         - From local databases: 'guides/adding-data/local-DB.md'
@@ -36,14 +37,13 @@ nav:
           - Motivation: 'guides/setting-priorities/intro.md'
           - Using Criteria: 'guides/setting-priorities/criterias.md'
           - Using Filters: 'guides/setting-priorities/filters.md'
-      - Refining solutions: 
+      - Refining Solutions: 
           - Motivation: 'guides/refining-solutions/intro.md'
           - Feedback: 'guides/refining-solutions/feedback.md'
           - Steering: 'guides/refining-solutions/steering.md'
   - Advanced Usage:
-      - Command line tool: 'index.md'
-      - Scenarios: 'index.md'
-      - Wrangle properties: 'index.md'
+      - Command Line Tool: 'advanced/command-line.md'
+      - Wrangle properties: 'advanced/wrangle-properties.md'
       - Web security: 'advanced/web-security.md'
   - Pipeline:
       - Brief Overview: 'index.md'

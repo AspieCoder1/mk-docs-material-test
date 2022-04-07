@@ -15,18 +15,18 @@ In the figure below, it is indicated that the values inGoodread.details are cont
 ![profiling-config](https://i.imgur.com/5ra1ubM.png)
 Profiling parameters configure the discovery of candidate keys and the discovery of inclusion dependencies. 
 
-#### Candidate key discovery parameters:
+#### Candidate key discovery parameters
 - **Detect candidate keys**: whether to search for candidate key attributes or not. This is enabled by default.
 - **Max candidate key size**: the maximum number of attributes that can be used in a candidate key. We recommend this is kept quite low (e.g. 1), as the number of candidate keys in tables with many attributes can grow rapidly
 
-#### Inclusion dependency discovery parameters:
+#### Inclusion dependency discovery parameters
 - **Overlap threshold**: only inclusion dependencies with at least this fraction of overlap will be used in joins. Note that inclusion dependencies are kept when the overlap in either direction exceeds the overlap threshold.
 - **Matches only**: Restrict inclusion dependency discovery only to source tables that have at least one attribute matching an end product attribute.
 - **Candidate keys only**: Restrict inclusion dependency discovery only to attributes that are candidate keys.
 
 > Note: These latter two parameters can be used to reduce the number of inclusion dependencies retained, to those that are most relevant to the wrangling task at hand.
 
-## Steering profiling: 
+## Excluding an inclusion dependency
 It is possible to exclude an inclusion dependency or a candidate key in the explain window for the profiling component. As with the matches component, the exclude column can be used to toggle the availability of the inclusion dependency or candidate key in the wrangling process. 
 
 ![steering-profiling](https://i.imgur.com/WNEf8tw.png)
