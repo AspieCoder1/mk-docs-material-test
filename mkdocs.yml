@@ -56,8 +56,8 @@ nav:
       - Transducers:
           - Match: 'index.md'
           - Repair: 'index.md'
-          - Transform: 'index.md'
-          - Profile: 'index.md'
+          - Transform: 'pipeline/transform.md'
+          - Profile: 'pipeline/profile.md'
           - Map: 'pipeline/map.md'
           - Select: 'pipeline/select.md'
   - Open Source Self Help: 
