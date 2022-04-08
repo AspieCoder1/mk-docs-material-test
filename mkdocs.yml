@@ -21,7 +21,6 @@ nav:
       - Setup Datapreparer: 
           - Vscode Setup: 'quick-start/vscode-setup.md'
           - IntelliJ Setup: 'quick-start/intellij-setup.md'
-          - Terminal: 'index.md'
       - Starter Example: 'quick-start/starter-project.md'
   - Guides:
       - Data Preparation Process: 'guides/data-prep-process.md'
@@ -42,8 +41,15 @@ nav:
           - Feedback: 'guides/refining-solutions/feedback.md'
           - Steering: 'guides/refining-solutions/steering.md'
   - Advanced Usage:
-      - Command Line Tool: 'advanced/command-line.md'
-      - Wrangle properties: 'advanced/wrangle-properties.md'
+      - Command Line Tool: 
+        - Setup: 'advanced/command-line/intro.md'
+        - Commands: 'advanced/command-line/commands.md'
+        - Usages: 'advanced/command-line/usages.md'
+        - Files:
+          - Wrangle Properties: 'advanced/command-line/files/wrangle-properties.md'
+          - Sources: 'advanced/command-line/files/sources.md'
+          - Data Context: 'advanced/command-line/files/data-context.md'
+          - Feedback: 'advanced/command-line/files/feedback.md'
       - Web security: 'advanced/web-security.md'
   - Pipeline:
       - Brief Overview: 'index.md'
