@@ -61,9 +61,9 @@ nav:
           - Map: 'pipeline/map.md'
           - Select: 'pipeline/select.md'
   - Open Source Self Help: 
-      - Project Structure: 
-          - Spring Setup: 'spring-setup.md'
-      - Contributing: 'index.md'
+      - Spring Setup: 'open-source/spring-setup.md'
+      - Building a custom component: 'open-source/custom-component.md'
+      - Contributing: 'open-source/contributing.md'
 plugins:
   - search
 markdown_extensions:
