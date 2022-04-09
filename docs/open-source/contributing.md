@@ -8,17 +8,6 @@ Include at least one integration test that assures the component always behaves 
 
 Add javadoc documentation where applicable.
 
-## Compiling
-
-Run `mvn package` to compile the projects you will need. You shouldn't have to define build paths in Eclipse.
-
-To get up and running, you will also need the following:
-* Java, version 11 or later.
-
-Additionally, you may need the following if you use them in your experiments:
-* [liblpsolve55j](http://lpsolve.sourceforge.net/5.5/Java/README.html) (for Mac, see [here](https://gist.github.com/san81/15843df713054852f748)) to be added to java.library.path, for the Mapping Selection transducer (project `mappingselection-orm`)
-
-
 ## Coding Conventions
 
 Before committing and pushing your code, please format it using Eclipse's Source -> Format. Allow lines to overflow.
@@ -42,3 +31,26 @@ The root folder of the project only contains `pom.xml`, and documentation about 
 Transducer code is placed in packages under `com.tdvf.transducer.X`, where `X` is the name of the transducer.
 
 All other project code is placed in packages under `com.tdvf.X`, where `X` is the name of the project.
+
+## Compiling
+
+Run `mvn package` to compile the projects you will need. You shouldn't have to define build paths in Eclipse.
+
+To get up and running, you will also need the following:
+
+* Java, version 11 or later.
+
+Additionally, you may need the following if you use them in your experiments:
+* [liblpsolve55j](http://lpsolve.sourceforge.net/5.5/Java/README.html) (for Mac, see [here](https://gist.github.com/san81/15843df713054852f748)) to be added to java.library.path, for the Mapping Selection transducer (project `mappingselection-orm`)
+
+## Build Distributable
+To build Data Preparer from source, you will need:
+
+* Java, version 11 or later.
+* Maven, version 3 or later.
+
+You can then run:
+```
+cd app
+mvn clean install -DskipTests
+```
