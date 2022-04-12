@@ -1,5 +1,5 @@
 # IntelliJ setup
-> **_NOTE:_** The project now includes a .idea folder which should handle all set up for you.
+> **_NOTE:_** The project now includes a .idea folder which should handle all the set up for you.
 > This guide is in case that setup does not work as expected.
 
 This section will go through the steps to set up the datapreparer tool to run in IntelliJ IDEA.
@@ -13,19 +13,19 @@ Running the code in IntelliJ requires the following prerequisites:
 - The codebase cloned into an IntelliJ project and imported as a maven project with a Java 11 SDK configured.
 
 ## Setting the maven project
-Go to **File > Project structure** or <kbd>&#8984;</kbd> + <kbd>;</kbd> after doing this you should should see the following menu.
+Go to **File > Project structure** or <kbd>&#8984;</kbd> + <kbd>;</kbd>. After doing this the following menu will be displayed:
 ![Project structure](https://i.imgur.com/3JjeqR5.png){.center}
 At this point, you should set the project SDK to Java 11 and the language level. 
-We go on to the modules tab, press the blue + button and choose the **new module** and the maven option.
+Go to the modules tab, press the blue + button and choose the **new module** and the maven option.
 After completing this step, you should get the following menu,
 ![New module](https://i.imgur.com/1Kr5Nkr.png){.center}
-You should click the **next** button.
-You will see a prompt to choose the name and location of the module at this point.
-Keep the name it gives you. 
+Click the **next** button.
+Use the prompt to choose the name and location of the module at this point.
+Keep the default name. 
 The completed configuration should look like this,
 ![Complete module configuration](https://i.imgur.com/VJj89Oh.png){.center}
-From here, you should get a maven project sidebar.
-Your IntelliJ should look something like this,
+A maven project sidebar should be visible.
+IntelliJ will now look like this,
 ![IntelliJ with maven config](https://i.imgur.com/IvhVgix.png){.center}
 
 ## Fixing Java version in maven
@@ -47,7 +47,7 @@ You can do this by adding the following lines to pom.xml inside the app director
 ## Adding the datapreparer maven configuration
 We now need to add the maven configuration for the *app* directory, which contains the application source code.
 If you look at the maven tab, you will see a small plus button.
-This screenshot shows the tab and the plus button,
+Click on the small plus button in the maven tab as shown:
 ![Maven tab](https://i.imgur.com/iUFpkii.png){.center}
 Click on this add button.
 The following prompt is to select the location of the pom.xml file for the configuration you would like to add.
@@ -60,7 +60,7 @@ We go into the top right-hand corner next to the run button.
 There is a dropdown to its left; click this dropdown and select **edit configurations...**.
 There you should create a new Spring Boot runner.
 The configuration which is given below,
-![Run configuration](https://i.imgur.com/qm2V16t.png)
+![Run configuration](https://i.imgur.com/qm2V16t.png){.center}
 > **IMPORTANT: the JVM option must be set to 
 > `
 > -Djava.awt.headless=false -Dapple.awt.UIElement=true -Dtextdb.allow_full_path=true
