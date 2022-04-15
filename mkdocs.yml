@@ -45,6 +45,8 @@ nav:
       - Scenarios: 'index.md'
       - Wrangle properties: 'index.md'
       - Web security: 'advanced/web-security.md'
+      - Custom Transducers:
+        - No op transducer example: 'advanced/custom/no-op.md'
   - Pipeline:
       - Brief Overview: 'index.md'
       - Transducers:
