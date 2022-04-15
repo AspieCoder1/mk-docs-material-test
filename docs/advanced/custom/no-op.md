@@ -113,3 +113,29 @@ public class NoOpTransducer implements TransducerInterface {
 ```
 
 This piece of code create the custom no op transducer, overrides the neccessary methods and implements them.
+
+## Step 3: wiring up the transducer
+The next step is to wire up the transducer.
+Go to `ClientImpl.java` inside `com.tdvf.client`.
+This file contains all the method the client uses to do the processing.
+Go to the wrangle method and find the following piece of code:
+```java
+if (settings.workflowContains(TransducerType.MAPPING_SELECT)) {
+    step(mappingSelectionTransducer);
+    step(aggregatorTransducer);
+}
+```
+Replace this with the following:
+```java
+if (settings.workflowContains(TransducerType.MAPPING_SELECT)) {
+    step(mappingSelectionTransducer);
+    step(noOpTransducer);
+    step(aggregatorTransducer);
+}
+```
+Running the application and wrangling the data should give the following log output, with a different time
+```
+14:38:59 INFO  [NoOpTransducer] Executed no-op transducer
+```
+
+## Step 4: updating the UI
