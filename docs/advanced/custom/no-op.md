@@ -8,3 +8,73 @@ This is the transducer which performs no actions on the data.
 ## Trasducer implementation
 The following UML diagram demonstrates a custom transducer implementation, this can be generalised to the existing transducers:
 ![Custom transducer UML](https://i.imgur.com/0OtGpaA.png){.center}
+This diagrams give us the following steps required:
+1. Adding our new custom transducer type to `TransducerType.java`
+2. Creating a new CustomTransducer class that implements `TransducerInterface`
+3. Override the execute and getType methods inside the CustomTransducer types
+4. Implement these methods
+5. Wire up this transducer into a pipeline so that it is executed
+
+## Step 1: adding a new transducer type
+The first step is to add the new trasducer to the TransducerType enum.
+Navigate to the package `com.tdvf.persistence.entity` and open `TransducerType.java`
+The file should look like this:
+``` java
+public enum TransducerType {
+
+	INITIALIZE("init"),
+
+	MATCH("match"), //user-configurable. needed for fd_discover, example_discover
+
+	FD_DISCOVER("fd_discover"),
+	
+	FD_REPAIR("repair"), //user-configurable. needs fd_discover, match
+
+	EXAMPLE_DISCOVER("example_discover"), //needs match
+	
+	EXAMPLE_TRANSFORM("transform"), //user-configurable. needs example_discover, match
+
+	PROFILE("profile"), //user-configurable.
+
+	MAPPING("map"), //user-configurable. needs match, profile
+	
+	MAPPING_SELECT("select"), //user-configurable. needs mapping
+
+	AGGREGATE("aggregate");
+
+	String name;
+	
+	private TransducerType(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	static public TransducerType lookup(String name) {
+		try {
+			for (TransducerType type : TransducerType.values()) {
+				if (type.getName().equalsIgnoreCase(name)) {
+					return type;
+				}
+			}
+			return null;
+		} catch (IllegalArgumentException e) {
+			return null;
+		}
+	}
+
+	public String toString() {
+		return name;
+	}
+	
+}
+```
+Change the `AGGEREGATE("aggregate");` line to:
+```java
+AGGEREGATE("aggregate"),
+
+NO_OP("no_op");
+```
+This adds the new transducer type `NO_OP`.
