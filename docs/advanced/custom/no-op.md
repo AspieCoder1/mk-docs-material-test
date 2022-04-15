@@ -9,6 +9,7 @@ This is the transducer which performs no actions on the data.
 The following UML diagram demonstrates a custom transducer implementation, this can be generalised to the existing transducers:
 ![Custom transducer UML](https://i.imgur.com/0OtGpaA.png){.center}
 This diagrams give us the following steps required:
+
 1. Adding our new custom transducer type to `TransducerType.java`
 2. Creating a new CustomTransducer class that implements `TransducerInterface`
 3. Override the execute and getType methods inside the CustomTransducer types
@@ -78,3 +79,37 @@ AGGEREGATE("aggregate"),
 NO_OP("no_op");
 ```
 This adds the new transducer type `NO_OP`.
+
+## Step 2: creating custom transducer and overriding methods, and implement them.
+Inside the transducer folder create a new package called noop.
+Inside this package create a new Java file called `NoOpTransducer` with the following content:
+```java
+package com.tdvf.transducer.noop;
+
+import com.tdvf.client.TransducerInterface;
+import com.tdvf.persistence.entity.TransducerType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import java.io.File;
+import java.util.Map;
+
+@Service
+public class NoOpTransducer implements TransducerInterface {
+    private static final Logger log = LoggerFactory.getLogger(NoOpTransducer.class);
+
+    @Override
+    public void execute(File dataspacePath, Map<String, String> props) {
+        log.info("Executed no-op transducer");
+    }
+
+
+    @Override
+    public TransducerType getType() {
+        return TransducerType.NO_OP;
+    }
+}
+```
+
+This piece of code create the custom no op transducer, overrides the neccessary methods and implements them.
