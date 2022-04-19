@@ -20,7 +20,7 @@ In the explain page in the figure below, format transformations are described in
 Format transformation infers rules that reformat from source values into the format of corresponding target values. 
 ![transformation-config](https://i.imgur.com/ihf4w2U.png)
 
-#### Format transformation parameters:
+#### Format transformation parameters
 - **minimum percent**: This parameter indicates the minimum percentage of the source values that should participate in the training data for the rule inference.
 - **minimum size**: This parameter is related to minimum percent, but is specified as a number of values instead of a percentage.
 - **fail limit**: This parameter controls how many attempts the synthesis algorithm should have before concluding that a transformation cannot be found for an
@@ -29,7 +29,7 @@ attribute. The fail limit should be less than the minimum size.
 
 > Note: In general, attributes that contain more different formats will require higher values for all these parameters, but higher values lead to longer runtimes. We recommend that none of minimum percent, minimum size or source limit should be below 10, and that fail limit should be 5 or more.
 
-## Steering transformations
+## Transformations usages
 ### Add examples
 It is also possible to define custom transformation examples that will instruct the process how to transform source attribute values. This is done by selecting add examples from the submenu. 
 
