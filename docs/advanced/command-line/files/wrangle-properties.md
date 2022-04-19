@@ -20,7 +20,7 @@ The properties in this file are expected to be as described below:
 
       > Note: A required component will be executed, even if it is omitted here. For instance, defining a workflow as map, select, will trigger execution of the workflow match, profile, map, select, because match and profile are required by map.
   
-  
+
     > Note: The default workflow includes all components: match, repair, transform, profile, map, select.
 
 - **workflow.incremental**: Setting the value of this property to no, means that when a new wrangling process is executed, all components will be executed. Setting it to yes, means that when a new wrangling process is executed, any existing results will be reused i.e. components whose configuration hasn’t changed since the last run will not run again.
@@ -35,7 +35,7 @@ The properties in this file are expected to be as described below:
 
       > For instance, defining product fields as name:repair:transform, desc:transform:join means that the end
 
-    product will comprise two fields, name anddesc, while source attributes matching to name
+    product will comprise two fields, name and desc, while source attributes matching to name
   will not be repaired and will not be transformed, and source attributes matching to desc
   will not be joined to any other attributes. Note that these are slightly different from the
   workflow steps defined in the workflow property above.
