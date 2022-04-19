@@ -13,6 +13,7 @@ In the figure below, it is indicated that the values inGoodread.details are cont
 
 ## Configurations in the control panel
 ![profiling-config](https://i.imgur.com/5ra1ubM.png)
+
 Profiling parameters configure the discovery of candidate keys and the discovery of inclusion dependencies. 
 
 #### Candidate key discovery parameters

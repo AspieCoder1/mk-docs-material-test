@@ -5,7 +5,7 @@ This file describes the feedback instances, one feedback instance per line.
 We have provided an example of how the contents of the file should be structured in **feedback.csv** in the Manual Books example.
 
 ### Headers
-The headers in this file should match the names and the order of the fields of the target schema, as defined in the property product.fields(see [Wrangle Properties](../commands.md)). 
+The headers in this file should match the names and the order of the fields of the target schema, as defined in the property product.fields (see [Wrangle Properties](../commands.md)). 
 
 ### Columns
 Then, an additional column header is expected, titled relevant. 
