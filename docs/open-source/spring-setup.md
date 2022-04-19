@@ -1,6 +1,6 @@
 # Application structure
 
-Datapreparer is a [spring](https://spring.io) application written in Java. This page gives a basic introduction to the project and
+Datapreparer is a [spring](https://spring.io) application written in Java and uses Maven for packages. This page gives a basic introduction to the project and
 application structure. And a guide to the key components and packages of the application.
 
 ## Overview of the application

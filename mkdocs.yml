@@ -61,9 +61,10 @@ nav:
           - Map: 'pipeline/map.md'
           - Select: 'pipeline/select.md'
   - Open Source Self Help: 
-      - Project Structure: 
-          - Spring Setup: 'spring-setup.md'
-      - Contributing: 'index.md'
+      - App Overview: 'open-source/intro.md'
+      - Data Storage: 'open-source/data-storage.md'
+      - Wrangle Pipeline: 'open-source/wrangle-pipeline.md'
+      - Contributing: 'open-source/contributing.md'
 plugins:
   - search
 markdown_extensions:
